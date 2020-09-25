@@ -7,6 +7,7 @@ body {
   font-family: Robato, sans-serif;
   font-weight: 400;
   color: #fff;
+  background-color: #ccc;
   background-image: url(0101_intro-hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,7 +16,7 @@ body {
 
 .calculator {
   width: 484px;
-  height: 669px;
+  min-height: 669px;
   margin:50px auto;
   overflow: hidden;
   border-radius: 10px;
@@ -24,21 +25,34 @@ body {
 
 .output {
   width: 100%;
-  height: 170px;
+  min-height: 170px;
   background-color: rgba(43, 45, 47, 0.0);
 }
 
-.output span {
-  font-size: 96px;
+.output:hover {
+  background-color: rgba(43, 45, 47, 0.05);
+}
+
+.output input {
+  font-size: 84px;
+  width: 404px;
   float: right;
   margin-top: 52px;
   margin-right: 34px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+}
+
+.output input[value] {
+  color: #FFF;
+  text-align: right;
 }
 
 .input {
   width: 100%;
   padding-left: 1.5px;
-  background-color: rgba(29, 32, 35, 0.7);
+  background-color: rgba(29, 32, 35, 0.4);
 }
 
 button {
@@ -54,6 +68,10 @@ button {
 }
 
 button:nth-child(4n) {
+  background-color: orange;
+}
+
+button:last-child {
   background-color: orange;
 }
 
