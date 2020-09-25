@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Robato, sans-serif;
+  font-weight: 400;
+  color: #fff;
+  background-image: url(0101_intro-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.calculator {
+  width: 484px;
+  height: 669px;
+  margin:50px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px 1px #222;
+}
+
+.output {
+  width: 100%;
+  height: 170px;
+  background-color: rgba(43, 45, 47, 0.0);
+}
+
+.output span {
+  font-size: 96px;
+  float: right;
+  margin-top: 52px;
+  margin-right: 34px;
+}
+
+.input {
+  width: 100%;
+  padding-left: 1.5px;
+  background-color: rgba(29, 32, 35, 0.7);
+}
+
+button {
+  margin: 1.5px -0.2px;
+  border: none;
+  width: 117.6px;
+  height: 97.6px;
+  font-size: 45px;
+  outline: none;
+  color: #fff;
+  background-color: rgb(95, 96, 98);
+  cursor: pointer;
+}
+
+button:nth-child(4n) {
+  background-color: orange;
+}
+
+button:nth-child(1) {
+  background-color: rgb(63, 65, 67);
+}
+
+button:nth-child(17) {
+  width: 239.2px
+}
+
+button:hover {
+  opacity: 0.9;
+}
