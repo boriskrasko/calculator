@@ -2,4 +2,4 @@
 
 http://ideveloper.by/calculator
 
-![alt text](http://ideveloper.by/preview/calculator.png)
+![Screenshoot](http://ideveloper.by/preview/calculator.png)
