@@ -5,23 +5,15 @@
   <title>Calculator</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body><div class="info">
-   <a style="font-size: 56px; color: #FFF;" href="#info">?</a>
-  </div>
+<body>
   <div class="calculator">
-
     <div class="output">
       <input disabled type="text" value="0" placeholder="0" data-result maxlength="5">
     </div>
-
     <div class="input">
-
       <button id="ac" data-all-clear>C</button>
-      <!--<button id="c" data-all-clear>C</button>-->
-
       <button data-operation>^</button>
       <button onclick="getSqrt();" data-operation>&#8730;</button>
-
       <button data-operation>&#247;</button>
 
       <button data-number>7</button>
@@ -44,20 +36,9 @@
 
       <button data-number>0</button>
       <button onclick="addMinusForCurrentNumber();">&#8722;/&#43;</button>
-
       <button data-decimal>.</button>
       <button  data-operation>=</button>
     </div>
-  </div>
-
-  <div id="info" class="tutorial">
-    <h2>Туториал:</h2><br>
-    <p>. Кнопка [ C ] выполняет 2 функции: </p>
-    <p>- при одиночном нажатии - очищает на экране последнее введенное число;</p>
-    <p>- при двойном нажатии - полностью очищает данные</p>
-    <p>. 25 √ => 5 или √ 25 => 5 - любой вариант работает</p>
-    <p>. 9 √ + 1 => 4 или √ 9 + 1 => 4 - любой вариант работает</p>
-    <p>. Для ввода отрицательных чисел используется дополнительная кнопка [ &#8722;/&#43; ]</p>
   </div>
   <script src="main.js"></script>
 </body>

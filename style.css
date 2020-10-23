@@ -11,19 +11,20 @@ body {
   font-family: Robato, sans-serif;
   font-weight: 400;
   color: #fff;
+  /*background: linear-gradient(to bottom, #b2cef3 0%, #e9f0fa 90%);*/
   background: url('https://help.apple.com/macOS/high-sierra/whats-new/Art/0101_intro-hero.jpg') no-repeat;
   background-size: cover;
   background-color: #aaa;
-  /*background: linear-gradient(to bottom, #b2cef3 0%, #e9f0fa 90%);*/
 }
 
 .calculator {
   width: 484px;
   min-height: 669px;
-  margin:50px auto;
+  margin: 50px auto;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 5px 5px 20px 1px #222;
+  transform: scale(0.8);
 }
 
 .output {
@@ -88,9 +89,9 @@ button:hover {
 }
 
 .info {
-  margin: 20px 20px; 
+  margin: 20px 20px;
   width: 65px;
-  background: rgba(95, 96, 98, 0.2); 
+  background: rgba(95, 96, 98, 0.2);
   border-radius: 50%;
   box-shadow: 5px 5px 20px 1px #2224;
   display: flex;
@@ -105,9 +106,9 @@ button:hover {
 }
 
 .tutorial {
-  margin: 20px auto; 
-  width: 450px; 
-  background: rgba(95, 96, 98, 0.8); 
+  margin: 20px auto;
+  width: 450px;
+  background: rgba(95, 96, 98, 0.8);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 5px 5px 20px 1px #222;
