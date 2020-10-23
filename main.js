@@ -6,11 +6,9 @@ const clearButton = document.querySelector('[data-all-clear]');
 const resultDisplay = document.querySelector('[data-result]');
 const calculatorDisplay = document.querySelector('[data-result]');
 
-
 //Global variables
 let NewNumber = false;
 let PandingOperation = '';
-
 
 //Iterating Loops
 for (let i = 0; i < numberButtons.length; i++) {
@@ -31,7 +29,6 @@ for (let i = 0; i < operationButtons.length; i++) {
   });
 };
 
-
 //Event
 decimalButton.addEventListener('click', function (e) {
   addDecimal();
@@ -45,7 +42,6 @@ clearButton.addEventListener('click', function (e) {
   clearLastNumber();
 });
 
-
 //Functions
 pressNumberButton = (number) => {
   if (NewNumber) {
@@ -57,7 +53,6 @@ pressNumberButton = (number) => {
     resultDisplay.value += number;
   };
 };
-
 
 performOperation = (operationMath) => {
 
