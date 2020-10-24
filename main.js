@@ -21,10 +21,17 @@ for (let i = 0; i < numberButtons.length; i++) {
   });
 };
 
+clearOperation = () => {
+  let currentOperation = document.querySelector('.active-operation');
+  if (currentOperation) currentOperation.classList.remove('active-operation');
+}
+
 for (let i = 0; i < operationButtons.length; i++) {
   let operation = operationButtons[i];
   operation.addEventListener('click', function (e) {
     performOperation(e.target.textContent);
+    clearOperation();
+    if (e.target.textContent !== '=') e.currentTarget.classList.add('active-operation');
     changeFontSizeDigits();
   });
 };
@@ -35,10 +42,12 @@ decimalButton.addEventListener('click', function (e) {
 });
 
 clearButton.addEventListener('dblclick', function (e) {
+  clearOperation()
   clearResult();
 });
 
 clearButton.addEventListener('click', function (e) {
+  clearOperation()
   clearLastNumber();
 });
 
