@@ -8,15 +8,16 @@ a {
   color: #fff;
 }
 
+html {
+  background-color: #b2cef3;
+  background: url('https://help.apple.com/macOS/high-sierra/whats-new/Art/0101_intro-hero.jpg') no-repeat, linear-gradient(to bottom, #b2cef3 0%, #e9f0fa 90%) no-repeat;
+  background-size: cover;
+}
+
 body {
-  height: 100vh;
   font-family: Robato, sans-serif;
   font-weight: 400;
   color: #fff;
-  background-color: #b2cef3;
-  background: url('https://help.apple.com/macOS/high-sierra/whats-new/Art/0101_intro-hero.jpg') no-repeat, linear-gradient(to bottom, #b2cef3 0%, #e9f0fa 90%);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .calculator {
